@@ -1,0 +1,9 @@
+CREATE TABLE `customer_income_type_results` (
+  `resultID` int NOT NULL,
+  `low_customer` int DEFAULT '0',
+  `middle_customer` int DEFAULT '0',
+  `high_customer` int DEFAULT '0',
+  `quarterCount` int NOT NULL,
+  KEY `resultID` (`resultID`),
+  CONSTRAINT `customer_income_type_results_ibfk_1` FOREIGN KEY (`resultID`) REFERENCES `groupresults` (`resultID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

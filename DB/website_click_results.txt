@@ -1,0 +1,7 @@
+CREATE TABLE `website_click_results` (
+  `resultID` int NOT NULL,
+  `websiteClick` int NOT NULL,
+  `quarterCount` int NOT NULL,
+  KEY `resultID` (`resultID`),
+  CONSTRAINT `website_click_results_ibfk_1` FOREIGN KEY (`resultID`) REFERENCES `groupresults` (`resultID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

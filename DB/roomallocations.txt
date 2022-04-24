@@ -1,0 +1,15 @@
+CREATE TABLE `roomallocations` (
+  `decisionID` int NOT NULL,
+  `HotelWebsite` int NOT NULL,
+  `CRS` int NOT NULL,
+  `Booking` int NOT NULL,
+  `Expedia` int NOT NULL,
+  `Hotels` int NOT NULL,
+  `Trip` int NOT NULL,
+  `Otelz` int NOT NULL,
+  `Odamax` int NOT NULL,
+  `roomType` int NOT NULL,
+  `quarterCount` int NOT NULL,
+  KEY `decisionID` (`decisionID`),
+  CONSTRAINT `roomallocations_ibfk_1` FOREIGN KEY (`decisionID`) REFERENCES `groupdecisions` (`decisionID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

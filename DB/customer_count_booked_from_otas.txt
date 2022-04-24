@@ -1,0 +1,14 @@
+CREATE TABLE `customer_count_booked_from_otas` (
+  `resultID` int NOT NULL,
+  `Website` int DEFAULT '0',
+  `CRS` int DEFAULT '0',
+  `Booking` int DEFAULT '0',
+  `Expedia` int DEFAULT '0',
+  `Hotels` int DEFAULT '0',
+  `Agoda` int DEFAULT '0',
+  `Otelz` int DEFAULT '0',
+  `Odamax` int DEFAULT '0',
+  `quarterCount` int NOT NULL,
+  KEY `resultID` (`resultID`),
+  CONSTRAINT `customer_count_booked_from_otas_ibfk_1` FOREIGN KEY (`resultID`) REFERENCES `groupresults` (`resultID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -1,0 +1,18 @@
+CREATE TABLE `kpi_results` (
+  `resultID` int NOT NULL,
+  `revenues` int NOT NULL,
+  `netRevenues` int NOT NULL,
+  `OCC` double NOT NULL,
+  `ADR` double NOT NULL,
+  `revPAR` double NOT NULL,
+  `netRevPAR` double NOT NULL,
+  `spendings` int NOT NULL,
+  `digitalMarketingCosts` int NOT NULL,
+  `otaCommisionCost` int NOT NULL,
+  `soapCost` int NOT NULL,
+  `fairShare` double NOT NULL,
+  `reputationFlag` tinyint(1) NOT NULL DEFAULT '0',
+  `quarterCount` int NOT NULL,
+  KEY `resultID` (`resultID`),
+  CONSTRAINT `kpi_results_ibfk_1` FOREIGN KEY (`resultID`) REFERENCES `groupresults` (`resultID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

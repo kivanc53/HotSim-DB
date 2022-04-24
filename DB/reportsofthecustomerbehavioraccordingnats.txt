@@ -1,0 +1,20 @@
+CREATE TABLE `reportsofthecustomerbehavioraccordingnats` (
+  `totalCustomerAmount` int NOT NULL,
+  `customersChoosedWebsite` int NOT NULL,
+  `customersChoosedCRS` int NOT NULL,
+  `customersChoosedBooking` int NOT NULL,
+  `customersChoosedExpedia` int NOT NULL,
+  `customersChoosedHotels` int NOT NULL,
+  `customersChoosedTrip` int NOT NULL,
+  `customersChoosedOtelz` int NOT NULL,
+  `customersChoosedOdamax` int NOT NULL,
+  `customersStayedAtStandard` int NOT NULL,
+  `customersStayedAtDeluxe` int NOT NULL,
+  `customersStayedAtClub` int NOT NULL,
+  `customersStayedAtCornerSuit` int NOT NULL,
+  `customersStayedAtDeluxeSuit` int NOT NULL,
+  `customersChoosedNoBuy` int NOT NULL,
+  `quarterCount` int NOT NULL,
+  `nationalityOfCustomer` varchar(120) NOT NULL,
+  `gameID` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

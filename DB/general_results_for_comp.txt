@@ -1,0 +1,13 @@
+CREATE TABLE `general_results_for_comp` (
+  `resultID` int NOT NULL,
+  `hotelBudget` int NOT NULL DEFAULT '0',
+  `totalSoldRoomCount` int NOT NULL DEFAULT '0',
+  `soldStandartRoom` int NOT NULL DEFAULT '0',
+  `soldClubRoom` int NOT NULL DEFAULT '0',
+  `soldDeluxeRoom` int NOT NULL DEFAULT '0',
+  `soldCornerSuitRoom` int NOT NULL DEFAULT '0',
+  `soldDeluxeSuitRoom` int NOT NULL DEFAULT '0',
+  `quarterCount` int NOT NULL,
+  KEY `resultID` (`resultID`),
+  CONSTRAINT `general_results_for_comp_ibfk_1` FOREIGN KEY (`resultID`) REFERENCES `groupresults` (`resultID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

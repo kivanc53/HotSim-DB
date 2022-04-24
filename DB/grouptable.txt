@@ -1,0 +1,14 @@
+CREATE TABLE `grouptable` (
+  `GroupUsername` varchar(120) NOT NULL,
+  `GroupPassword` varchar(120) NOT NULL,
+  `FirstStudentName` varchar(120) NOT NULL,
+  `FirstStudentID` varchar(120) NOT NULL,
+  `FirstStudentRole` varchar(120) NOT NULL,
+  `SecondStudentName` varchar(120) NOT NULL,
+  `SecondStudentID` varchar(120) NOT NULL,
+  `SecondStudentRole` varchar(120) NOT NULL,
+  `ThirdStudentName` varchar(120) NOT NULL,
+  `ThirdStudentID` varchar(120) NOT NULL,
+  `ThirdStudentRole` varchar(120) NOT NULL,
+  PRIMARY KEY (`GroupUsername`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

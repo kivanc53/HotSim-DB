@@ -1,0 +1,13 @@
+CREATE TABLE `customer_nats_results_for_comp` (
+  `resultID` int NOT NULL,
+  `Turks` int NOT NULL DEFAULT '0',
+  `WesternEuropean` int NOT NULL DEFAULT '0',
+  `EasternEuropean` int NOT NULL DEFAULT '0',
+  `Slavic` int NOT NULL DEFAULT '0',
+  `Asian` int NOT NULL DEFAULT '0',
+  `American` int NOT NULL DEFAULT '0',
+  `Arabic` int NOT NULL DEFAULT '0',
+  `quarterCount` int NOT NULL,
+  KEY `resultID` (`resultID`),
+  CONSTRAINT `customer_nats_results_for_comp_ibfk_1` FOREIGN KEY (`resultID`) REFERENCES `groupresults` (`resultID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

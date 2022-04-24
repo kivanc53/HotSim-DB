@@ -1,0 +1,10 @@
+CREATE TABLE `groupresults` (
+  `resultID` int NOT NULL AUTO_INCREMENT,
+  `gameID` int NOT NULL,
+  `groupName` varchar(120) NOT NULL,
+  `theDate` datetime DEFAULT NULL,
+  `quarterCount` int NOT NULL,
+  PRIMARY KEY (`resultID`),
+  KEY `groupName` (`groupName`),
+  CONSTRAINT `groupresults_ibfk_1` FOREIGN KEY (`groupName`) REFERENCES `grouptable` (`GroupUsername`)
+) ENGINE=InnoDB AUTO_INCREMENT=460 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
